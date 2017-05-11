@@ -32,7 +32,7 @@ mobile-bg: theme #若填写theme则使用theme-color的值。
 header-bg: /assets/images/bg.png
 
 # disqus
-disqus-shortname: blog-kejun-tk
+disqus-shortname: flaneurse
 
 # cdn
 cdn: false
@@ -47,7 +47,7 @@ google_analytics:
 #多个作者
 defaultAuthor: KeJun
 defaultAuthorImage: assets/images/tx.jpg
-manyAuthors: true
+manyAuthors: flase
 
 # 是否使用gallery
 gallery: false
