@@ -1,8 +1,12 @@
 ---
-title: 惰性加载(lazy-loading)
-date: 2017-04-23 22:45:28
+layout: post
+title: lazy-loading
+date: 2017-04-23 22:45:28 +8000
 categories: Python
-
+image: /asserts/img/demo1.jpg
+tags: 模块导入
+author: flaneur
+comments: true
 ---
 
 > 引言
@@ -83,9 +87,5 @@ all_by_module = {
 object_origins = {}
 for module, items in iteritems(all_by_module):
     for item in items:
-        object_origins[item] = module
+        o
 ```
-
-
-
-之后使用描述符拦截

@@ -1,11 +1,12 @@
 ---
-title: Python-GIL
-date: 2017-04-16 20:18:22
+layout: post
+title: 'Python-GIL'
+date: 2017-04-16 20:16:22 +8000
 categories: Python
----
-
-### GIL (全局解释器锁)
-
+image: /asserts/images/demo5.jpg
+tags: GIL
+author: flaneur
+comments: true
 ---
 
 尽管 Python（特指 Cpython） 支持多线程编程，但是在解释器的 C语言实现中，有一部分并不是线程安全的，因此不能完全支持并发执行。
@@ -60,4 +61,4 @@ if __name__ == '__main__':
 
 
 
-- 第二种方法是 C语言拓展编程，主要思想就是将计算密集型的任务转移到 C语言中，将其独立于 Python ，在 C代码中释放 GIL。通过在 C代码中插入特殊的宏来实现，就不展开讲述了。
+- 第二种方法是 C 语言拓展编程，主要思想就是将计算密集型的任务转移到 C 语言中，将其独立于 Python ，在 C 代码中释放 GIL。通过在 C 代码中插入特殊的宏来实现，就不展开讲述了。
