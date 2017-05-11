@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#4CAF50">
+
+  <title>Tags</title>
+
+  <link rel="icon" href="/blog/assets/images/icon/favicon-32*32.ico" sizes="32x32">
+  <link rel="icon" href="/blog/assets/images/icon/favcon-16*16.ico" sizes="16x16">
+
+  <meta name="description" content="「志のある三流は四流」
+">
+  <link rel="canonical" href="http://localhost:4000/blog/tags.html">
+  <link rel="alternate" type="application/rss+xml" title="flaneur" href="http://localhost:4000/blog/feed.xml">
+
+  <link href="https://fonts.css.network/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/blog/assets/css/materialize.min.css">
+  <link rel="stylesheet" href="/blog/assets/css/gallery-materialize.min.opt.css">
+  <link rel="stylesheet" href="/blog/assets/css/prism.css">
+  <link rel="stylesheet" href="/blog/assets/css/main.css">
+  
+  <link rel="stylesheet" href="/blog/assets/css/posts.css">
+
+</head>
+
+  <body>
+
+    <!-- 菜单和header -->
+<nav class="nav-extended blue">
+  <div class="nav-background">
+    <div class="ea k" style="background-image: url('/blog/assets/images/bg.png');"></div>
+  </div>
+  <div class="nav-wrapper db">
+    <!--移动端菜单按钮-->
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+    <!--页面的导航-->
+    <ul class="bt hide-on-med-and-down">
+       
+      <li>
+        <a href="/blog/">Home</a>
+      </li>
+         
+      <li>
+        <a href="/blog/about.html">About</a>
+      </li>
+          
+      <li>
+        <a href="/blog/archive.html">Archive</a>
+      </li>
+                  
+      <li>
+        <a href="/blog/links.html">Links</a>
+      </li>
+          
+      <li class="k">
+        <a href="/blog/tags.html">Tags</a>
+      </li>
+        
+      <li class="nav-search">
+          <div class="nav-search-wrapper">
+            <div>
+            <input class="cb-search-content" id="cb-search-content" placeholder="文章标题 日期 标签" ><i class="search material-icons">search</i>
+            </div>
+          </div>
+        </li>
+    </ul>
+    <style>
+    </style>
+    <!--页面的标题-->
+    <div class="nav-header de">
+       
+      <h1>TAGS</h1>
+      
+      <div class="ge">tag page</div>
+      
+      
+    </div>
+  </div>
+  <!-- 页面内的导航 -->
+  
+  
+</nav>
+<!--移动端nav-->
+<ul id="slide-out" class="side-nav">
+  <li>
+    <div class="userView ">
+      
+      <div class="background blue">
+        <div class="mobile-background-image" style="background-image: url('/blog/assets/images/bg.png');"></div>
+      </div>
+      
+      <a href="/blog/"><img class="circle" src="/blog/assets/images/M.png"></a>
+      <a href="#!"><span class="white-text name">flaneur</span></a>
+      <a href="mailto:e.sif.chen@gmail.com"><span class="white-text email">e.sif.chen@gmail.com</span></a>
+    </div>
+  </li>
+  <form action="http://localhost:4000/blog/tags.html" method="get">
+    <div class="input-field">
+      <!--<input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off">-->
+      <input class="cb-search-content" type="search" required name="q" placeholder="Search" autocomplete="off">
+      <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+      <i class="material-icons">close</i>
+    </div>
+  </form>
+  <section id="search-results" style="display: none;"> </section>
+  <li>
+    <div class="divider"></div>
+  </li>
+  <li><a class="subheader">Pages</a></li>
+  <li><a class="waves-effect tooltipped" data-position="right" data-delay="50" data-tooltip="Home" href="/blog/">Home</a></li>
+   
+  <li><a class="waves-effect tooltipped" data-position="right" data-delay="50" data-tooltip="About" href="/blog/about.html">About</a></li>
+    
+  <li><a class="waves-effect tooltipped" data-position="right" data-delay="50" data-tooltip="Archive" href="/blog/archive.html">Archive</a></li>
+            
+  <li><a class="waves-effect tooltipped" data-position="right" data-delay="50" data-tooltip="Links" href="/blog/links.html">Links</a></li>
+    
+  <li><a class="waves-effect tooltipped" data-position="right" data-delay="50" data-tooltip="Tags" href="/blog/tags.html">Tags</a></li>
+   
+  <li>
+    <div class="divider"></div>
+  </li>
+</ul>
+
+
+<script id="search-results-template" type="text/mustache">
+  {{#entries}}
+    <li>
+      <a class="tooltipped" data-position="right" data-delay="50" data-tooltip="{{#date}}{{pubdate}}{{/date}}" href="/blog{{url}}">{{title}}</a>
+    </li>
+  {{/entries}}
+</script>
+<script id="search-results-nav" type="text/mustache">
+    <div class="center">
+  {{#entries}}
+   <ul>
+   <li class="post-list"><a class="waves-effect post-list black-text" data-tooltip="{{#date}}{{pubdate}}{{/date}}" href="/blog{{url}}">{{title}}</a></li>
+   </ul>
+    
+  {{/entries}}
+  </div>
+</script>
+
+
+
+    
+
+    <main>
+
+    <div id="main" class="db">
+        <div class="content">
+     <br> 
+
+        </div>
+    </div>
+    <div class="fixed-action-btn to-top">
+        <a href="#top" id="toTop" class="btn-floating btn-large waves-effect waves-light" style="display: none;"><i
+                class="material-icons">expand_less</i></a>
+    </div>
+    <div class="fixed-action-btn body-to-top">
+        <a href="#top" id="bodyToTop" class="btn-floating btn-large waves-effect waves-light" style="display: none;"><i
+                class="material-icons">expand_less</i></a>
+    </div>
+</main>
+
+    
+
+    <footer class="page-footer blue">
+        <div class="row">
+            <div class="col s12 m4 l4">
+                <p class="center p-linkIcon">
+                    
+                    
+                <a href="https://twitter.com/yrmkejun"><img class="linkIcon center" src="/blog/assets/images/footer/footer_ico-twitter.png" alt=""></a>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                <a href="https://github.com/KeJunMao"><img class="linkIcon center" src="/blog/assets/images/footer/footer_ico-github.png" alt=""></a>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </p>
+            </div>
+            <div class="col s12 m4 l4">
+                <p class="p-date grey-text text-lighten-4 center">Copyright ©  2017  flaneur</p>
+            </div>
+            <div class="col s12 m4 l4 right">
+                <div class="row copyright-row">
+                    <div class="col s12 center white-text">
+                    Powered by <a class="white-text" href="https://jekyllrb.com/">Jekyll</a>
+                    </div>
+                    <div class="col s12 center white-text">
+                    Theme by <a class="white-text" href="https://rubygems.org/gems/jekyll-theme-materialize">KeJun</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="footer-copyright">
+        <div class="container">
+            All rights reserved.
+            <a class="grey-text text-lighten-4 right" href="/blog/feed.xml">via RSS</a>
+        </div>
+    </div>
+</footer>
+<style>
+</style>
+
+    <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="/blog/assets/js/materialize.min.js"></script>
+<script type="text/javascript" src="/blog/assets/js/jquery.scrollToTop.min.js"></script>
+<script type="text/javascript" src="/blog/assets/js/gallery.min.opt.js"></script>
+<script type="text/javascript" src="/blog/assets/js/jquery.lazyload.min.js"></script>
+<script type="text/javascript" src="/blog/assets/js/toc.js"></script>
+<script type="text/javascript" src="/blog/assets/js/main.js"></script>
+<script type="text/javascript" src="/blog/assets/js/bootstrap3-typeahead.min.js"></script>
+
+
+
+
+<script>
+   $(document).ready(function () {
+        var time1 = 0;
+        var show = false;
+        var names = new Array(); //文章名字等
+        var urls = new Array(); //文章地址
+        $.getJSON("/blog/assets/cb-search.json").done(function (data) {
+            if (data.code == 0) {
+                for (var index in data.data) {
+                    var item = data.data[index];
+                    names.push(item.title);
+                    urls.push(item.url);
+                }
+
+                $(".cb-search-content").typeahead({
+                    source: names,
+
+                    afterSelect: function (item) {
+						$(".cb-search-tool").css("display", "none");
+                        show = false;
+                        window.location.href = (urls[names.indexOf(item)]);
+                        return item;
+                    }
+                });
+            }
+        }).error(function(data, b) { console.log("json解析错误，搜索功能暂不可用，请检查文章title，确保不含有换行等特殊符号"); });
+            
+                var posts = $("div.gallery-item");
+                if (posts.attr("data-url")){
+                posts.unbind();
+                posts.click(function(){
+                    var postUrl = $(this).attr("data-url")
+                    window.location.href=postUrl;
+                })
+                }
+
+            
+    });
+
+</script>
+
+    
+
+  </body>
+
+</html>
