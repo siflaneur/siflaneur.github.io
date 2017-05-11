@@ -3,7 +3,6 @@ layout: post
 title: 'Jupyter notebook 修改主题'
 date: 2017-05-07 21:24:26
 categories: Python
-image: /assets/images/demo3.jpg
 tags: Python
 author: flaneur
 comments: true

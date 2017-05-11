@@ -3,7 +3,6 @@ layout: post
 title: lazy-loading
 date: 2017-04-23 22:45:28 +8000
 categories: Python
-image: /asserts/img/demo1.jpg
 tags: 模块导入
 author: flaneur
 comments: true

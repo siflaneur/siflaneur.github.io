@@ -3,7 +3,6 @@ layout: post
 title: 'Python-GIL'
 date: 2017-04-16 20:16:22 +8000
 categories: Python
-image: /asserts/images/demo5.jpg
 tags: GIL
 author: flaneur
 comments: true
