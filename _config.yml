@@ -10,7 +10,7 @@ title: flaneur
 email: e.sif.chen@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   「志のある三流は四流」
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 # icon
 icon-16x16: /assets/images/icon/favcon-16*16.ico
